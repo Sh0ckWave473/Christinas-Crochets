@@ -1,0 +1,131 @@
+body {
+    --primary: #7EBDC3;
+    --secondary: #C6DEA6;
+    --tertiary: #DFF2D8;
+    background-color: var(--tertiary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: var(--primary);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+#home-link, #alt-links {
+    display: flex;
+    padding: 0;
+    flex: 50%
+}
+
+#home-link {
+    justify-content: flex-start;
+}
+
+#alt-links {
+    justify-content: flex-end;
+}
+
+nav > ul > a {
+    display: flex;
+    background-color: var(--primary);
+    padding: 1% 2%;
+    margin: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+nav > ul > a:hover {
+    background-color: #60dde9;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+}
+
+#project {
+    padding: 5%;
+    border-radius: 2%;
+    margin: 2%;
+    background-color: var(--primary);
+}
+
+#project > img {
+    max-width: 100%;
+    max-height: 40vh;
+    border-radius: 2%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 1% 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #333;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+h2 > img, h2 > i {
+    max-height: 40vh;
+    margin-inline: 2%;
+}
+
+#portrait {
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 40vh;
+    margin: 5%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
